@@ -1,0 +1,100 @@
+/* GLOBAL */
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: ; */
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.fullPageSection{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* INTRO Section*/
+.intro{
+    background-color: #FFF50F;
+    letter-spacing: 0.15em;
+    font-weight: 900;
+    font-size: 120px;
+    line-height: 169px;
+}
+
+.intro-1{
+    background-color: #FFF50F;
+    font-family: 'Nobile', sans-serif;
+    font-size: 33px;
+    line-height: 125.3%;
+    /* or 44px */
+
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+.intro-1-kiri{
+    /* width: 50%; */
+    background-color: #FAFAFA;
+    height: 100vh;
+    /* padding-right: 20vw; */
+}
+.intro-1-kanan{
+    /* width: 50%;
+    position: relative;
+    width: 372px;
+    height: 618px;
+    left: -57px;
+    top: 105px; */
+    height: 100vh;
+    /* padding-right: 20vw; */
+    
+}
+
+.text-intro-kiri{
+    left: 30px;
+}
+.text-intro-kanan{
+    left: 207px;
+}
+
+.text-box-intro{
+    width: 372px;
+    position: relative;
+}
+
+.box-gambar-intro{
+    position: absolute;
+    width: 390px;
+    height: 603px;
+    left: 468px;
+    top: 42px;
+    background: url("../img/gambar1.JPG");
+    background-position: center;
+    background-size: cover;
+    background-position-x: -230px;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    border: 9px solid #000000;
+}
+
+.backgroundintro-2{
+    background: url("../img/backgroundintro.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -120px;
+    filter: grayscale(50%) contrast(50%) brightness(40%);
+}
+
+.kata{
+    font-family: 'Nobile', sans-serif;
+    font-size: 35px;
+    padding-top: 37vh;
+    color: #ffff;
+}
+
+/* Harlahpancasila Section */
+
+.harlahpancasila{
+   background: #DF3F3F;
+}
