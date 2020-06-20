@@ -1,6 +1,90 @@
 *{
     margin: 0;
     padding: 0;
-    /* font-family: ; */
+    font-family: ;
     box-sizing: border-box;
 }
+
+/* About Us 1 */
+.fullpage { 
+    height: 100vh; 
+    width: 100%; 
+    background-color: #FD4BED; 
+    overflow: hidden; 
+} 
+
+.header {
+    padding-left: 47px;
+    padding-top: 30px;
+}
+
+.text {
+    padding-top: 150px;
+}
+
+.about{ 
+    color: #FFF50F;
+    letter-spacing: 0.15em; 
+    font-weight: 900; 
+    font-size: 120px; 
+    line-height: 169px; 
+} 
+
+.header {
+    padding-left: 47px;
+    padding-top: 30px;
+    padding-right: 117x;
+}
+
+/* About Us 2 */
+.fullpage-2 { 
+    height: 100vh; 
+    width: 100%; 
+    background-color: #171717; 
+    overflow: hidden; 
+} 
+
+.pictAbel{ 
+    position: absolute; 
+    width: 396px; 
+    height: 460px;  
+    left: 85px; 
+    top: 730px; 
+    background: url("../img/01.JPG"); 
+    background-position: center; 
+    background-size: 700px; 
+    background-position-x: -150px; 
+    background-position-y: -470px; 
+    background-repeat: no-repeat; 
+    border: 9px solid #FFFAFA; 
+} 
+
+.pictIrun{ 
+    position: absolute; 
+    width: 395px; 
+    height: 460px; 
+    left: 520px; 
+    top: 730px;
+    background: url("../img/04.JPEG");
+    background-position: center; 
+    background-size: 1200px; 
+    background-position-x: -380px; 
+    background-position-y: -700px; 
+    background-repeat: no-repeat; 
+    border: 9px solid #FFFAFA; 
+} 
+
+.pictOcang{ 
+    position: absolute; 
+    width: 396px; 
+    height: 460px; 
+    left: 953px; 
+    top: 730px; 
+    background: url("../img/02.JPG");
+    background-position: center; 
+    background-size: 900px; 
+    background-position-x: -280px; 
+    background-position-y: -120px; 
+    background-repeat: no-repeat; 
+    border: 9px solid #FFFAFA; 
+} 
