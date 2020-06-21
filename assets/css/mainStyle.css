@@ -7,10 +7,12 @@
     overflow-x: hidden;
 }
 
+
 .fullPageSection{
     height: 100vh;
     width: 100%;
     overflow: hidden;
+    
 }
 
 /* INTRO Section*/
@@ -70,9 +72,9 @@
     left: 468px;
     top: 42px;
     background: url("../img/gambar1.JPG");
-    background-position: center;
+    background-position: left;
     background-size: cover;
-    background-position-x: -230px;
+    background-position-x: -100px;
     background-repeat: no-repeat;
     filter: grayscale(100%);
     border: 9px solid #000000;
@@ -158,7 +160,7 @@
 .harlahpancasila-2 div:nth-child(2){
     height: 100vh;
     background: url("../img/upacara1.jpg");
-    background-position: center;
+    background-position-y: -200px;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0;
@@ -173,7 +175,7 @@
 .harlahpancasila-3 div:nth-child(1){
     height: 100vh;
     background: url("../img/upacara2.JPG");
-    background-position-x: -320px;
+    background-position-x: -165px;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0;
@@ -186,10 +188,11 @@
     margin: 0px;
     padding: 0;
 
+    text-align: end;
     font-family: Nobile;
     font-style: normal;
     font-weight: normal;
-    font-size: 33px;
+    font-size: 35px;
     line-height: 125.3%;
     /* or 44px */
     letter-spacing: 0.05em;
@@ -205,3 +208,67 @@
     line-height: 169px;
     color: #FFDB1E;
 }
+
+.upacara1{
+    background: #FFB500;
+}
+
+.upacara1 div:nth-child(1){
+    height: 60vh;
+    width: 100vw;
+    background: url("../img/upacara3.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -80px;
+    background-position-x: 0px;
+}
+
+.upacara1 div:nth-child(2){
+    height: 40vh;
+    width: 100vw;
+
+    font-family: Nobile;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 125.3%;
+    /* or 44px */
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #141414;
+}
+
+.upacara2{
+    background: #FF82E2;
+}
+
+.upacara2 div:nth-child(1){
+    height: 90vh;   
+    color: #000000;
+
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 33px;
+    line-height: 125.3%;
+    /* or 44px */
+    letter-spacing: 0.05em;
+}
+
+.upacara2 div:nth-child(2){
+    height: 100vh;
+}
+.upacara2 div:nth-child(2) div{
+    background: url("../img/upacara4.JPG");
+    background-position: center;
+    background-size: cover;
+    height: 666;
+    width: 615;
+}
+
+footer{
+    width: 100vw;
+    height: 20vh;
+    background: #FF82E2;
+}
+
