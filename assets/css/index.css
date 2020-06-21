@@ -9,13 +9,19 @@
 .fullpage { 
     height: 100vh; 
     width: 100%; 
-    overflow: hidden; 
 } 
 
-/* .header {
+.header {
     padding-left: 47px;
     padding-top: 30px;
-} */
+}
+
+.header-1 {
+    background-color: transparent;
+    padding-left: 500px;
+    padding-top: 30px;
+    overflow-y: hidden;
+}
 
 .home-1 {
     background-color: #f0eeecde;
@@ -79,6 +85,10 @@
 }
 
 /* home 4 */
+.h-4 {
+    left: 587px;
+}
+
 .home-4-4 { 
     background-color: #FFDB1E;
     width: 1296px;
@@ -135,3 +145,41 @@
     line-height: 116px;
     letter-spacing: 0.15em;
 } 
+
+.text-4 {
+    position: absolute;
+    left: 100px;
+    width: 100px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 22px;
+}
+
+.button {
+    position: absolute;
+    width: 270px;
+    height: 85px;
+    left: 545px;
+    top: 2650px;
+    background: #FFFFFF;
+    border: 3px solid #000000;
+    box-sizing: border-box;
+    border-radius: 65px;
+}
+
+.button-text {
+    position: absolute;
+    width: 165px;
+    top: 10px;
+    left: 52px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 39px;
+    line-height: 55px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: #000000;
+}
