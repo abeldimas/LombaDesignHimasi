@@ -3,6 +3,7 @@
     padding: 0;
     font-family: ;
     box-sizing: border-box;
+    overflow-x: hidden; 
 }
 
 /* About Us 1 */
@@ -46,14 +47,14 @@
 
 .pictAbel{ 
     position: absolute; 
-    width: 396px; 
-    height: 460px;  
-    left: 85px; 
-    top: 730px; 
+    width: 350px; 
+    height: 468px;  
+    left: 149px; 
+    top: 720px; 
     background: url("../img/01.JPG"); 
     background-position: center; 
     background-size: 700px; 
-    background-position-x: -150px; 
+    background-position-x: -170px; 
     background-position-y: -470px; 
     background-repeat: no-repeat; 
     border: 9px solid #FFFAFA; 
@@ -61,14 +62,14 @@
 
 .pictIrun{ 
     position: absolute; 
-    width: 395px; 
-    height: 460px; 
-    left: 520px; 
-    top: 730px;
+    width: 350px; 
+    height: 468px; 
+    left: 574px; 
+    top: 720px;
     background: url("../img/04.JPEG");
     background-position: center; 
     background-size: 1200px; 
-    background-position-x: -380px; 
+    background-position-x: -400px; 
     background-position-y: -700px; 
     background-repeat: no-repeat; 
     border: 9px solid #FFFAFA; 
@@ -76,15 +77,40 @@
 
 .pictOcang{ 
     position: absolute; 
-    width: 396px; 
-    height: 460px; 
-    left: 953px; 
-    top: 730px; 
-    background: url("../img/02.JPG");
+    width: 350px; 
+    height: 468px; 
+    left: 999px; 
+    top: 720px; 
+    background: url("../img/02-min.JPG");
     background-position: center; 
     background-size: 900px; 
-    background-position-x: -280px; 
+    background-position-x: -310px; 
     background-position-y: -120px; 
     background-repeat: no-repeat; 
     border: 9px solid #FFFAFA; 
 } 
+
+.name {
+    color: white;
+    padding-top: 500px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 125.3%;
+    letter-spacing: 0.05em;
+}
+
+.job {
+    color: lavender;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 125.3%;
+    letter-spacing: 0.05em;
+}
+
+.logo {
+    color: ivory;
+}
