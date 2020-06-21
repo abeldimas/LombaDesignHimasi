@@ -4,9 +4,8 @@
     padding: 0;
     /* font-family: ; */
     box-sizing: border-box;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
-
 
 .fullPageSection{
     height: 100vh;
@@ -15,25 +14,83 @@
     
 }
 
+nav{
+    
+}
+nav a:last-child{
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: 800;
+    display: inline-flex;
+    width: 60px;
+    height: 60px;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    margin: 0 10px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    font-size: 32px;
+}
+
 /* INTRO Section*/
 .intro{
     background-color: #FFF50F;
     letter-spacing: 0.15em;
     font-weight: 900;
-    font-size: 120px;
+    font-size: 10vw;
     line-height: 169px;
 }
 
 .intro-1{
     background-color: #FFF50F;
     font-family: 'Nobile', sans-serif;
-    font-size: 33px;
+    font-size:2rem;
     line-height: 125.3%;
     /* or 44px */
 
     text-align: center;
     letter-spacing: 0.05em;
 }
+
+@media screen and (max-width: 600px) {
+    .intro {
+      font-size: 20vw;
+    }
+
+    .intro-1{
+        overflow-y: auto !important;
+    }
+}
+/* 
+@media screen and (max-width: 1024px) {
+    .intro-1{
+        font-size:1.7em;
+    }
+
+    .text-intro-kiri{
+        position: absolute;
+        top: 20%;
+        left: 5%;
+    }
+    
+    .box-gambar-intro{
+        background-position:;
+        background-size: auto;
+        background-position-x: -50px !important;
+        background-repeat: no-repeat;
+        filter: grayscale(100%);
+        border: 9px solid #000000;
+    }
+
+}
+@media screen and (min-width: 2560px) {
+    .intro-1{
+        font-size:3.7em;
+    }
+} */
 
 .intro-1-kiri{
     /* width: 50%; */
@@ -42,35 +99,37 @@
     /* padding-right: 20vw; */
 }
 .intro-1-kanan{
-    /* width: 50%;
-    position: relative;
-    width: 372px;
-    height: 618px;
-    left: -57px;
-    top: 105px; */
     height: 100vh;
-    /* padding-right: 20vw; */
     
 }
 
 .text-intro-kiri{
-    left: 30px;
+    position: absolute;
+    top: 20vh;
+    left: 5%;
 }
 .text-intro-kanan{
-    left: 207px;
+    position: absolute;
+    top: 30vh;
+    left: 35%;
 }
 
 .text-box-intro{
-    width: 372px;
-    position: relative;
+    /* width: 372px; */
+    width: 60%;
+    /* position: relative; */
 }
 
 .box-gambar-intro{
     position: absolute;
-    width: 390px;
-    height: 603px;
-    left: 468px;
-    top: 42px;
+    /* width: 390px; */
+    width: 30%;
+    /* height: 603px; */
+    height: 80%;
+    /* left: 468px; */
+    left: 35%;
+    /* top: 42px; */
+    top: 10%;
     background: url("../img/gambar1.JPG");
     background-position: left;
     background-size: cover;
@@ -98,6 +157,10 @@
 /* Harlahpancasila Section */
 .harlahpancasila{
    background: #DF3F3F;
+}
+
+.harlahpancasila .d-table{
+    margin: 0 !important;
 }
 
 .harlahpancasila-1{
@@ -243,7 +306,7 @@
 }
 
 .upacara2 div:nth-child(1){
-    height: 90vh;   
+    height: 80vh;   
     color: #000000;
 
     font-family: Arial;
@@ -256,19 +319,72 @@
 }
 
 .upacara2 div:nth-child(2){
-    height: 100vh;
+    height: 80vh;
 }
 .upacara2 div:nth-child(2) div{
     background: url("../img/upacara4.JPG");
     background-position: center;
     background-size: cover;
-    height: 666;
+    height: 70vh;
     width: 615;
 }
 
 footer{
-    width: 100vw;
+    width:100vw;
     height: 20vh;
     background: #FF82E2;
+    overflow: hidden;
+}
+footer div{
+    width: 100vw;
+    background: #FF82E2;
+    margin: auto;
+    text-align: center;
+}
+footer div main{
+    font-size: 20px;
+    
+}
+footer section a{
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: 800;
+    display: inline-flex;
+    width: 60px;
+    height: 60px;
+    background: #2c3e50;
+    color: white;
+    margin: 0 10px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    font-size: 32px;
+}
+footer section div a{
+    top: 0;
+    left: 90vw;
+    position: absolute;
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: 800;
+    display: inline-flex;
+    width: 60px;
+    height: 60px;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    margin: 0 10px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    font-size: 32px;
+}
+
+footer section a:hover{
+    background: #FAFAFA;
+    color: black;
+    text-decoration: none;
 }
 
