@@ -56,15 +56,8 @@ nav a:last-child:hover{
     letter-spacing: 0.05em;
 }
 
-@media screen and (max-width: 600px) {
-    .intro {
-      font-size: 20vw;
-    }
 
-    .intro-1{
-        overflow-y: auto !important;
-    }
-}
+
 /* 
 @media screen and (max-width: 1024px) {
     .intro-1{
@@ -116,21 +109,17 @@ nav a:last-child:hover{
 }
 
 .text-box-intro{
-    /* width: 372px; */
     width: 60%;
-    /* position: relative; */
 }
 
 .box-gambar-intro{
     position: absolute;
-    /* width: 390px; */
     width: 30%;
-    /* height: 603px; */
     height: 80%;
-    /* left: 468px; */
-    left: 35%;
-    /* top: 42px; */
-    top: 10%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 11%;
     background: url("../img/gambar1.JPG");
     background-position: left;
     background-size: cover;
@@ -148,10 +137,11 @@ nav a:last-child:hover{
     filter: grayscale(50%) contrast(50%) brightness(40%);
 }
 
+
+
 .kata{
     font-family: 'Nobile', sans-serif;
     font-size: 35px;
-    padding-top: 37vh;
     color: #ffff;
 }
 
@@ -198,12 +188,13 @@ nav a:last-child:hover{
     border-radius: 30px 0px 0px 30px;
 }
 
+
 .harlahpancasila-2{
     margin: 0;
     padding: 0;
 }
 
-.harlahpancasila-2 div:nth-child(1){
+.respontext{
     background-color: #FA5B29;
     height: 100vh;
     margin: 0px;
@@ -221,7 +212,7 @@ nav a:last-child:hover{
     color: #FFFFFF;
 }
 
-.harlahpancasila-2 div:nth-child(2){
+.respontext1{
     height: 100vh;
     background: url("../img/upacara1.jpg");
     background-position-y: -200px;
@@ -263,12 +254,14 @@ nav a:last-child:hover{
     color: black;
 }
 
+
+
 /* UPACARA */
 .upacara{
     background-color: #F33D03;
     letter-spacing: 0.15em;
     font-weight: 900;
-    font-size: 120px;
+    font-size: 10vw;
     line-height: 169px;
     color: #FFDB1E;
 }
@@ -306,8 +299,8 @@ nav a:last-child:hover{
     background: #FF82E2;
 }
 
-.upacara2 div:nth-child(1){
-    height: 80vh;   
+.upacara2-1{
+    height: 75vh;   
     color: #000000;
 
     font-family: Arial;
@@ -319,15 +312,12 @@ nav a:last-child:hover{
     letter-spacing: 0.05em;
 }
 
-.upacara2 div:nth-child(2){
-    height: 80vh;
+.upacara2-2{
+    height: 75vh;
 }
-.upacara2 div:nth-child(2) div{
-    background: url("../img/upacara4.JPG");
-    background-position: center;
-    background-size: cover;
+.upacara2-2 img{
     height: 70vh;
-    width: 615;
+    width: 100%;
 }
 
 footer{
@@ -364,7 +354,7 @@ footer section a{
 }
 footer section div a{
     top: 0;
-    left: 90vw;
+    left: 82%;
     position: absolute;
     margin-top: 20px;
     font-style: normal;
@@ -387,5 +377,169 @@ footer section a:hover{
     background: #FAFAFA;
     color: black;
     text-decoration: none;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px){
+    .intro {
+      font-size: 15vw;
+    }
+
+    .intro-1{
+        height: 100%;
+        font-size: 7vw;
+        line-height: auto;
+        text-align: center;
+        letter-spacing: auto;
+    }
+
+    .box-gambar-intro{
+        top: 37%;
+        height: 50vh;
+        width: 40vh;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-position-x: 50%;
+    }
+
+    .text-box-intro{
+        width: 80%;
+    }
+    .text-intro-kanan{
+        position: absolute;
+        top: 40vh;
+        left: 0;
+        right: 0;
+        margin: auto;
+        font-size: 3vh;
+    }
+
+    .text-intro-kiri{
+        position: absolute;
+        top: 15vh;
+        left: 0;
+        right: 0;
+        margin: auto;
+        font-size: 3vh;
+    }
+
+    .backgroundintro-2{
+        background: url("../img/backgroundintro.JPG");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: auto;
+        background-position-x: -30vw;
+        filter: grayscale(50%) contrast(50%) brightness(40%);
+    }
+
+    .kata{
+        font-size: 3vh;
+    }
+
+    .harlahpancasila-1{
+        font-size: 3vh;
+    }
+
+    .harlahpancasila-1 div:nth-child(2) {
+        text-align: end;
+    }
+    
+    .harlahpancasila-2{
+        height: 100%!important;
+    }
+
+    .respontext{
+        font-size: 3vh;
+        line-height: 125.3%;
+        letter-spacing: 0.05em;
+    }
+
+    .respontext1{
+        background-position-y: 0vh;
+        background-position-x: 50%;
+    }
+
+    .harlahpancasila-3{
+        height: 100%!important;
+    }
+
+    .harlahpancasila-3 div:nth-child(1){
+        height: 100vh;
+        background: url("../img/upacara2.JPG");
+        background-position-x: 93%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .harlahpancasila-3 div:nth-child(2){
+        background-color: #FED715;
+        height: 100vh;
+        margin: 0px;
+        padding: 0;
+    
+        text-align: end;
+        font-family: Nobile;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 3vh;
+        line-height: 125.3%;
+        /* or 44px */
+        letter-spacing: 0.05em;
+        color: black;
+    }
+
+    .upacara{
+        font-size: 15vw;
+    }
+
+    .upacara1{
+        height: 100%;
+    }
+
+    .upacara1 div:nth-child(1){
+        height: 100vh;
+        width: 100vw;
+        background: url("../img/upacara5.jpg");
+        background-size: cover;
+        background-position: center;
+        background-position-x: -23vw;
+    }
+
+    .upacara1 div:nth-child(2){
+        height: 100vh;
+        width: 100vw;
+    
+        font-family: Nobile;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 7vw;
+        line-height: 125.3%;
+        /* or 44px */
+        text-align: center;
+        letter-spacing: 0.05em;
+        color: #141414;
+    }
+
+    .upacara2{
+        height: 100%;
+    }
+
+    .upacara2-1{
+        height: 100%;
+        font-size: 7vw;
+    }
+
+    .upacara2-2{
+        height: 100vh;
+        width: 100vw;
+        background: url("../img/upacara4.JPG");
+        background-size: cover;
+        background-position: center;
+        background-position-x: -35vh;
+    }
+    
 }
 
