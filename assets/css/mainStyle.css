@@ -2,7 +2,7 @@
 *{
     margin: 0;
     padding: 0;
-    /* font-family: ; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
     box-sizing: border-box;
     /* overflow-x: hidden; */
 }
@@ -36,7 +36,7 @@ nav a:last-child:hover{
     text-decoration: none;
 }
 
-/* INTRO Section*/
+/* Intro */
 .intro{
     background-color: #FFF50F;
     letter-spacing: 0.15em;
@@ -47,7 +47,6 @@ nav a:last-child:hover{
 
 .intro-1{
     background-color: #FFF50F;
-    font-family: 'Nobile', sans-serif;
     font-size:2rem;
     line-height: 125.3%;
     /* or 44px */
@@ -56,42 +55,13 @@ nav a:last-child:hover{
     letter-spacing: 0.05em;
 }
 
-
-
-/* 
-@media screen and (max-width: 1024px) {
-    .intro-1{
-        font-size:1.7em;
-    }
-
-    .text-intro-kiri{
-        position: absolute;
-        top: 20%;
-        left: 5%;
-    }
-    
-    .box-gambar-intro{
-        background-position:;
-        background-size: auto;
-        background-position-x: -50px !important;
-        background-repeat: no-repeat;
-        filter: grayscale(100%);
-        border: 9px solid #000000;
-    }
-
-}
-@media screen and (min-width: 2560px) {
-    .intro-1{
-        font-size:3.7em;
-    }
-} */
-
 .intro-1-kiri{
     /* width: 50%; */
     background-color: #FAFAFA;
     height: 100vh;
     /* padding-right: 20vw; */
 }
+
 .intro-1-kanan{
     height: 100vh;
     
@@ -99,8 +69,9 @@ nav a:last-child:hover{
 
 .text-intro-kiri{
     position: absolute;
-    top: 20vh;
+    top: 25vh;
     left: 5%;
+    
 }
 .text-intro-kanan{
     position: absolute;
@@ -137,10 +108,7 @@ nav a:last-child:hover{
     filter: grayscale(50%) contrast(50%) brightness(40%);
 }
 
-
-
 .kata{
-    font-family: 'Nobile', sans-serif;
     font-size: 35px;
     color: #ffff;
 }
@@ -155,7 +123,6 @@ nav a:last-child:hover{
 }
 
 .harlahpancasila-1{
-    font-family: Arial;
     font-style: normal;
     font-weight: normal;
     font-size: 33px;
@@ -200,7 +167,6 @@ nav a:last-child:hover{
     margin: 0px;
     padding: 0;
 
-    font-family: Nobile;
     font-style: normal;
     font-weight: normal;
     font-size: 33px;
@@ -244,7 +210,6 @@ nav a:last-child:hover{
     padding: 0;
 
     text-align: end;
-    font-family: Nobile;
     font-style: normal;
     font-weight: normal;
     font-size: 35px;
@@ -284,7 +249,6 @@ nav a:last-child:hover{
     height: 40vh;
     width: 100vw;
 
-    font-family: Nobile;
     font-style: normal;
     font-weight: normal;
     font-size: 35px;
@@ -303,7 +267,6 @@ nav a:last-child:hover{
     height: 75vh;   
     color: #000000;
 
-    font-family: Arial;
     font-style: normal;
     font-weight: normal;
     font-size: 33px;
@@ -380,7 +343,7 @@ footer section a:hover{
 }
 
 /* Mobile Responsive */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
     .intro {
       font-size: 15vw;
     }
@@ -479,16 +442,7 @@ footer section a:hover{
         height: 100vh;
         margin: 0px;
         padding: 0;
-    
-        text-align: end;
-        font-family: Nobile;
-        font-style: normal;
-        font-weight: normal;
         font-size: 3vh;
-        line-height: 125.3%;
-        /* or 44px */
-        letter-spacing: 0.05em;
-        color: black;
     }
 
     .upacara{
@@ -511,16 +465,7 @@ footer section a:hover{
     .upacara1 div:nth-child(2){
         height: 100vh;
         width: 100vw;
-    
-        font-family: Nobile;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 7vw;
-        line-height: 125.3%;
-        /* or 44px */
-        text-align: center;
-        letter-spacing: 0.05em;
-        color: #141414;
+        font-size: 3vh;
     }
 
     .upacara2{
@@ -529,7 +474,7 @@ footer section a:hover{
 
     .upacara2-1{
         height: 100%;
-        font-size: 7vw;
+        font-size: 3vh;
     }
 
     .upacara2-2{
@@ -540,6 +485,366 @@ footer section a:hover{
         background-position: center;
         background-position-x: -35vh;
     }
+
+    footer div main{
+        font-size: 3vh;
+    }
+
+    footer section a{
+        margin-top: 20px;
+        font-style: normal;
+        font-weight: 800;
+        display: inline-flex;
+        width: 9vh;
+        height: 9vh;
+        background: #2c3e50;
+        color: white;
+        margin: 0 10px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s;
+        font-size: 4vh;
+    }
+    
+    footer section a:hover{
+        background: #2c3e50;
+        color: white;
+        text-decoration: none;
+    }
+    
+}
+
+/* Tablet Responsive */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .intro {
+        font-size: 15vw;
+      }
+  
+    .intro-1{
+        height: 100%;
+        font-size: 7vw;
+        line-height: auto;
+        text-align: center;
+        letter-spacing: auto;
+    }
+
+    .box-gambar-intro{
+        top: 37%;
+        height: 50vh;
+        width: 40vh;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-position-x: 50%;
+    }
+
+    .text-box-intro{
+        width: 80%;
+    }
+    .text-intro-kanan{
+        position: absolute;
+        top: 40vh;
+        left: 0;
+        right: 0;
+        margin: auto;
+        font-size: 3vh;
+    }
+
+    .text-intro-kiri{
+        position: absolute;
+        top: 15vh;
+        left: 0;
+        right: 0;
+        margin: auto;
+        font-size: 3vh;
+    }
+
+    .backgroundintro-2{
+        background: url("../img/backgroundintro.JPG");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: auto;
+        background-position-x:;
+        filter: grayscale(50%) contrast(50%) brightness(40%);
+    }
+
+    .kata{
+        font-size: 3vh;
+    }
+
+    .harlahpancasila-1{
+        font-size: 3vh;
+    }
+
+    .harlahpancasila-1 div:nth-child(2) {
+        text-align: end;
+    }
+    
+    .harlahpancasila-2{
+        height: 100%!important;
+    }
+  
+    .respontext{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        font-size: 3vh;
+        line-height: 125.3%;
+        letter-spacing: 0.05em;
+    }
+  
+    .respontext1{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        background-position-y: -20vh;
+        background-position-x: 50%;
+    }
+  
+    .harlahpancasila-3{
+        height: 100%!important;
+    }
+  
+    .harlahpancasila-3 div:nth-child(1){
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: 100vh;
+        background: url("../img/upacara2.JPG");
+        background-position-x: 93%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 0;
+        margin: 0;
+    }
+      
+    .harlahpancasila-3 div:nth-child(2){
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        background-color: #FED715;
+        height: 100vh;
+        margin: 0px;
+        padding: 0;
+        font-size: 3vh;
+    }
+  
+    .upacara{
+        font-size: 15vw;
+    }
+  
+    .upacara1{
+        height: 100%;
+    }
+  
+    .upacara1 div:nth-child(1){
+        height: 100vh;
+        width: 100vw;
+        background: url("../img/upacara5.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+  
+    .upacara1 div:nth-child(2){
+        height: 100vh;
+        width: 100vw;
+        font-size: 3vh;
+    }
+  
+    .upacara2{
+        height: 100%;
+    }
+  
+    .upacara2-1{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: 80vh;
+        font-size: 3vh;
+    }
+  
+    .upacara2-2{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: 100vh;
+        width: 100vw;
+        background: url("../img/upacara4.JPG");
+        background-size: cover;
+        background-position: center;
+        background-position-x: -35vh;
+    }
+
+    footer{
+        height: 20vh;
+        padding-bottom: 55px;
+    }
+
+    
+}
+
+/* Small Laptop & Desktop */
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .intro {
+        font-size: 15vw;
+    } 
+  
+    .intro-1{
+        height: 100%;
+        font-size: 3vh;
+        line-height: auto;
+        text-align: center;
+        letter-spacing: auto;
+    }
+
+    .intro-1 div:nth-child(1){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .text-box-intro{
+        width: 100%;
+    }
+
+    .text-intro-kiri{
+        position: absolute;
+        top: 30vh;
+        left: 12%;
+    }
+    .text-intro-kanan{
+        position: absolute;
+        top: 35vh;
+        left: 40%;
+    }
+
+    .box-gambar-intro{
+        position: absolute;
+        width: 40vh;
+        height: 70vh;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 15vh;
+        background: url("../img/gambar1.JPG");
+        background-position: left;
+        background-size: cover;
+        background-position-x: -60px;
+        background-repeat: no-repeat;
+        filter: grayscale(100%);
+        border: 9px solid #000000;
+    }
+  
+      .backgroundintro-2{
+          background: url("../img/backgroundintro.JPG");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position-y: auto;
+          background-position-x:;
+          filter: grayscale(50%) contrast(50%) brightness(40%);
+      }
+  
+      .kata{
+          font-size: 3vh;
+      }
+  
+      .harlahpancasila-1{
+          font-size: 3vh;
+      }
+  
+      .harlahpancasila-1 div:nth-child(2) {
+          text-align: end;
+      }
+      
+      .harlahpancasila-2{
+          height: 100vh!important;
+      }
+  
+      .respontext{
+          font-size: 3vh;
+          line-height: 125.3%;
+          letter-spacing: 0.05em;
+      }
+  
+      .respontext1{
+          background-position-y: 0vh;
+          background-position-x: 50%;
+      }
+  
+      .harlahpancasila-3{
+          height: 100vh!important;
+      }
+  
+      .harlahpancasila-3 div:nth-child(1){
+          height: 100vh;
+          background: url("../img/upacara2.JPG");
+          background-position-x: 93%;
+          background-repeat: no-repeat;
+          background-size: cover;
+          padding: 0;
+          margin: 0;
+      }
+      
+      .harlahpancasila-3 div:nth-child(2){
+          background-color: #FED715;
+          height: 100vh;
+          margin: 0px;
+          padding: 0;
+          font-size: 3vh;
+      }
+  
+      .upacara{
+          font-size: 15vw;
+      }
+  
+      .upacara1{
+          height: 100vh;
+      }
+  
+      .upacara1 div:nth-child(1){
+          /* height: 100vh;
+          width: 100vw; */
+          background: url("../img/upacara03.jpg");
+          background-size: cover;
+          background-position: left;
+      }
+  
+      .upacara1 div:nth-child(2){
+          font-size: 3vh;
+      }
+  
+      .upacara2{
+          height: 100vh;
+          padding: 5vh;
+          padding-top: 10vh;
+      }
+  
+      .upacara2-1{
+          height: 65vh;
+          font-size: 3vh;
+      }
+      .upacara2-1 article{
+        padding: 0!important;
+        top: 0;
+      }
+  
+      .upacara2-2{
+          height: 65vh;
+          width: 100vw;
+          background: url("../img/upacara4.JPG");
+          background-size: cover;
+          background-position: right;
+          background-position-x: -70px;
+          transform: scaleX(-1);
+          padding: 0!important;
+      }
+
+      footer{
+          margin-top: 5vh;
+          height: 100%;
+          padding-bottom: 55px;
+      }
+
     
 }
 
