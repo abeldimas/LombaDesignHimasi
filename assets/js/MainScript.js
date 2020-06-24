@@ -1,6 +1,5 @@
 //Responsive Design
 var windowWidth = $(window).width();
-console.log(windowWidth);
 if(windowWidth <= 768){
     $('.respontext1').insertBefore('.respontext');
     $('.upacara2-2').insertBefore('.upacara2-1');

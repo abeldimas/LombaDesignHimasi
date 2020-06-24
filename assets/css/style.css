@@ -36,6 +36,66 @@ nav a:last-child:hover{
     text-decoration: none;
 }
 
+/* Index */
+.row1 {
+    background: #FFEAD7;
+}
+
+.row1 h1{
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+}
+
+.row1 a{
+    font-size: 4vh;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+    background: white;
+    border: 2px solid black;
+    border-radius: 500px;
+    padding: 2vh 4vh;
+}
+
+.row1 a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.row1 h1:nth-child(1){
+    font-size: 7vw;
+}
+
+.row1 h1:nth-child(2){
+    font-size: 3vw;
+}
+
+.row1 h1:nth-child(3){   
+    font-size: 7vw;
+}
+
+.row1 {
+    background: #FFEAD7;
+}
+
+.row1 {
+    background: #FFEAD7;
+}
+
+.row2 {
+    background: #111F9C;
+}
+
+.row3 {
+    background: #FF4141;
+}
+
+.row4 {
+    background: #FFDB1E;
+}
+
 /* Intro */
 .intro{
     background-color: #FFF50F;
@@ -73,6 +133,7 @@ nav a:last-child:hover{
     left: 5%;
     
 }
+
 .text-intro-kanan{
     position: absolute;
     top: 30vh;
@@ -138,6 +199,7 @@ nav a:last-child:hover{
     height: 50vh;
     color: #000000;
 }
+
 .harlahpancasila-1 div:nth-child(2) {
     background-color: #DF3F3F;
     height: 50vh;
@@ -150,11 +212,11 @@ nav a:last-child:hover{
     border: 10px solid #F5C74D;
     border-radius: 0px 30px 30px 0px;
 }
+
 .harlahpancasila-1 div article:nth-child(2) hr{
     border: 10px solid #DF3F3F;
     border-radius: 30px 0px 0px 30px;
 }
-
 
 .harlahpancasila-2{
     margin: 0;
@@ -196,7 +258,7 @@ nav a:last-child:hover{
 .harlahpancasila-3 div:nth-child(1){
     height: 100vh;
     background: url("../img/upacara2.JPG");
-    background-position-x: -165px;
+    background-position-x: 97%;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0;
@@ -218,8 +280,6 @@ nav a:last-child:hover{
     letter-spacing: 0.05em;
     color: black;
 }
-
-
 
 /* UPACARA */
 .upacara{
@@ -277,7 +337,9 @@ nav a:last-child:hover{
 
 .upacara2-2{
     height: 75vh;
+    overflow-y: hidden;
 }
+
 .upacara2-2 img{
     height: 70vh;
     width: 100%;
@@ -285,16 +347,17 @@ nav a:last-child:hover{
 
 #footer-2{
     width:100vw;
-    height: 20vh;
     background: #FF82E2;
     overflow: hidden;
 }
+
 #footer-2 div{
     width: 100vw;
     background: #FF82E2;
     margin: auto;
     text-align: center;
 }
+
 #footer-2 div main{
     font-size: 20px;
 }
@@ -315,6 +378,7 @@ nav a:last-child:hover{
     transition: 0.4s;
     font-size: 32px;
 }
+
 #footer-2 section div a{
     top: 0;
     left: 82%;
@@ -371,6 +435,7 @@ nav a:last-child:hover{
     background-repeat: no-repeat;
     border: 8px solid white;
 }
+
 .bordergambar2{
     height: 50vh;
     background-image: url("../img/02-min.jpg");
@@ -379,6 +444,7 @@ nav a:last-child:hover{
     background-repeat: no-repeat;
     border: 8px solid white;
 }
+
 .bordergambar3{
     height: 50vh;
     background-image: url("../img/04.jpeg");
@@ -402,6 +468,7 @@ nav a:last-child:hover{
     margin: auto;
     text-align: center;
 }
+
 #footer-3 div main{
     font-size: 20px;
     color: white;
@@ -432,6 +499,7 @@ nav a:last-child:hover{
 
 /* Mobile Responsive */
 @media screen and (max-width: 767px){
+
     .intro {
       font-size: 15vw;
     }
@@ -574,6 +642,10 @@ nav a:last-child:hover{
         background-position-x: -35vh;
     }
 
+    #footer-2{
+        height: 20vh;
+    }
+
     #footer-2 div main{
         font-size: 3vh;
     }
@@ -628,11 +700,102 @@ nav a:last-child:hover{
     .aboutus2 .fullPageSection{
         height: 100% !important;
     }
+
+    
+    /* About Us */
+    .bordergambar1{
+        height: 40vh;
+        background-image: url("../img/01.jpg");
+        background-position: center;
+        background-size: 60vh;
+        background-repeat: no-repeat;
+        border: 8px solid white;
+    }
+    .bordergambar2{
+        height: 40vh;
+        background-image: url("../img/02-min.jpg");
+        background-position: center;
+        background-size: 80vh;
+        background-repeat: no-repeat;
+        border: 8px solid white;
+    }
+    .bordergambar3{
+        height: 40vh;
+        background-image: url("../img/04.jpeg");
+        background-position: bottom;
+        background-position-x: -25vh;
+        background-position-y: -50vh;
+        background-size: 95vh;
+        background-repeat: no-repeat;
+        border: 8px solid white;
+    }
+
+
+    /* Index */
+    .row1 a{
+        font-size: 6vw;
+        padding: 2vh 4vh;
+    }
+
+    .row1 .container-fluid{
+        text-align: center;
+    }
+    
+    .row1 a:hover{
+        text-decoration: none;
+        color: black;
+    }
+    
+    .row1 h1{
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0;
+    }
+
+    .row1 h1:nth-child(1){
+        font-size: 11vw;
+    }
+    
+    .row1 h1:nth-child(2){
+        font-size: 8vw;
+    }
+    
+    .row1 h1:nth-child(3){   
+        font-size: 11vw;
+        margin-bottom: 3vh;
+    }
     
 }
 
 /* Tablet Responsive */
 @media (min-width: 768px) and (max-width: 1023px) {
+
+    nav img{
+        width: 15vh !important;
+    }
+
+    nav a:last-child{
+        margin-top: 20px;
+        font-style: normal;
+        font-weight: 800;
+        display: inline-flex;
+        width: 80px;
+        height: 80px;
+        background: none;
+        border: 2px solid white;
+        color: white;
+        margin: 0 10px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s;
+        font-size: 42px;
+    }
+    
+    nav a:last-child:hover{
+        text-decoration: none;
+    }
+
     .intro {
         font-size: 15vw;
       }
@@ -792,70 +955,135 @@ nav a:last-child:hover{
         background-position-x: -35vh;
     }
 
-    footer{
+    #footer-2{
         height: 20vh;
         padding-bottom: 55px;
     }
 
-    /* About Us */
-    /* #footer-3{
-        width:100vw;
-        height: 100%;
-        padding-bottom: 20px;
-        background: #171717;
+        #footer-2{
+        height: 20vh;
+    }
+
+    #footer-2 div main{
+        font-size: 3vh;
+    }
+
+    #footer-2 section a{
+        margin-top: 20px;
+        font-style: normal;
+        font-weight: 800;
+        display: inline-flex;
+        width: 8vh;
+        height: 8vh;
+        background: #2c3e50;
+        color: white;
+        margin: 0 10px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s;
+        font-size: 4vh;
     }
     
-    #footer-3 section a:hover{
+    #footer-2 section a:hover{
         background: #2c3e50;
         color: white;
         text-decoration: none;
     }
 
-    .aboutus{
-        font-size: 7vh;
-    }
-    .aboutus2{
-        height: 100% !important;
-        padding-top: 11vh;
+    #footer-2 section div a{
+        top: 0;
+        left: 82%;
+        position: absolute;
+        margin-top: 20px;
+        font-style: normal;
+        font-weight: 800;
+        display: inline-flex;
+        width: 8vh;
+        height: 8vh;
+        background: none;
+        border: 2px solid white;
+        color: white;
+        margin: 0 10px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s;
+        font-size: 4vh;
     }
 
-    .aboutus2 .fullPageSection{
-        height: 100% !important;
-    } */
-
+    /* About Us */
     .special-card{
         width: 20vh !important;
     }
 
     .bordergambar1{
-        height: 40vh;
+        height: 30vh;
         background-image: url("../img/01.jpg");
         background-position: center;
-        background-size: 60vh;
+        background-size: 36vh;
         background-repeat: no-repeat;
         border: 8px solid white;
     }
     .bordergambar2{
-        height: 40vh;
+        height: 30vh;
         background-image: url("../img/02-min.jpg");
         background-position: center;
-        background-size: 80vh;
+        background-size: 50vh;
         background-repeat: no-repeat;
         border: 8px solid white;
     }
     .bordergambar3{
-        height: 40vh;
+        height: 30vh;
         background-image: url("../img/04.jpeg");
         background-position: bottom;
-        background-position-x: -35vh;
-        background-position-y: -50vh;
-        background-size: 95vh;
+        background-position-x: -27vh;
+        background-position-y: -40vh;
+        background-size: 75vh;
         background-repeat: no-repeat;
         border: 8px solid white;
     }
 
     .irun .card-body{
         height: 17vh;
+    }
+
+
+    /* Index */
+    .row1 a{
+        font-size: 4vw;
+        font-weight: 600;
+        font-style: normal;
+        text-decoration: none;
+        color: black;
+        background: white;
+        border: 2px solid black;
+        border-radius: 500px;
+        padding: 1.7vh 4vh;
+    }
+    
+    .row1 a:hover{
+        text-decoration: none;
+        color: black;
+    }
+    
+    .row1 h1{
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0;
+    }
+
+    .row1 h1:nth-child(1){
+        font-size: 8.7vw;
+    }
+    
+    .row1 h1:nth-child(2){
+        font-size: 5vw;
+    }
+    
+    .row1 h1:nth-child(3){   
+        font-size: 8.7vw;
+        margin-bottom: 3vh;
     }
 }
 
@@ -1012,14 +1240,29 @@ nav a:last-child:hover{
           background-position-x: -70px;
           transform: scaleX(-1);
           padding: 0!important;
+
       }
 
-      .footer-2{
+      #footer-2{
           margin-top: 5vh;
           height: 100%;
           padding-bottom: 55px;
-      }
+    }
+
+    /* Index */
+
+    .row1 h1:nth-child(1){
+        font-size: 6.5vw;
+    }
+    
+    .row1 h1:nth-child(2){
+        font-size: 3vw;
+    }
+    
+    .row1 h1:nth-child(3){   
+        font-size: 6.5vw;
+        margin-bottom: 3vh;
+    }
 
     
 }
-
