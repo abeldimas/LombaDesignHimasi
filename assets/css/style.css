@@ -2,7 +2,8 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; */
+    font-family: 'Muli', sans-serif;
     box-sizing: border-box;
     overflow-x: hidden;
 }
@@ -45,6 +46,7 @@ nav a:last-child:hover{
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 1rem;
+    overflow: hidden;
 }
 
 .row1 a{
@@ -74,6 +76,7 @@ nav a:last-child:hover{
 
 .row1 h1:nth-child(3){   
     font-size: 7vw;
+    margin-bottom: 5vh;
 }
 
 .row1 {
@@ -162,10 +165,10 @@ nav a:last-child:hover{
 }
 
 .backgroundintro-2{
-    background: url("../img/backgroundintro.JPG");
-    background-size: cover;
+    background: url("../img/online.jpg");
+    background-size: 250vh;
     background-repeat: no-repeat;
-    background-position-y: -120px;
+    background-position-y: -160px;
     filter: grayscale(50%) contrast(50%) brightness(40%);
 }
 
@@ -525,6 +528,7 @@ nav a:last-child:hover{
     .text-box-intro{
         width: 80%;
     }
+
     .text-intro-kanan{
         position: absolute;
         top: 40vh;
@@ -544,11 +548,10 @@ nav a:last-child:hover{
     }
 
     .backgroundintro-2{
-        background: url("../img/backgroundintro.JPG");
-        background-size: cover;
+        background-size: 265vh;
         background-repeat: no-repeat;
-        background-position-y: auto;
-        background-position-x: -30vw;
+        background-position-y: -25vh;
+        background-position-x: 0;
         filter: grayscale(50%) contrast(50%) brightness(40%);
     }
 
@@ -681,8 +684,6 @@ nav a:last-child:hover{
         background: #171717;
     }
     
-
-    
     #footer-3 section a:hover{
         background: #2c3e50;
         color: white;
@@ -692,6 +693,7 @@ nav a:last-child:hover{
     .aboutus{
         font-size: 7vh;
     }
+
     .aboutus2{
         height: 100% !important;
         padding-top: 11vh;
@@ -701,8 +703,6 @@ nav a:last-child:hover{
         height: 100% !important;
     }
 
-    
-    /* About Us */
     .bordergambar1{
         height: 40vh;
         background-image: url("../img/01.jpg");
@@ -711,6 +711,7 @@ nav a:last-child:hover{
         background-repeat: no-repeat;
         border: 8px solid white;
     }
+
     .bordergambar2{
         height: 40vh;
         background-image: url("../img/02-min.jpg");
@@ -719,6 +720,7 @@ nav a:last-child:hover{
         background-repeat: no-repeat;
         border: 8px solid white;
     }
+
     .bordergambar3{
         height: 40vh;
         background-image: url("../img/04.jpeg");
@@ -753,15 +755,15 @@ nav a:last-child:hover{
     }
 
     .row1 h1:nth-child(1){
-        font-size: 11vw;
+        font-size: 10vw;
     }
     
     .row1 h1:nth-child(2){
-        font-size: 8vw;
+        font-size: 7vw;
     }
     
     .row1 h1:nth-child(3){   
-        font-size: 11vw;
+        font-size: 10vw;
         margin-bottom: 3vh;
     }
     
@@ -821,6 +823,7 @@ nav a:last-child:hover{
     .text-box-intro{
         width: 80%;
     }
+
     .text-intro-kanan{
         position: absolute;
         top: 40vh;
@@ -840,10 +843,9 @@ nav a:last-child:hover{
     }
 
     .backgroundintro-2{
-        background: url("../img/backgroundintro.JPG");
-        background-size: cover;
+        background-size: 300vh;
         background-repeat: no-repeat;
-        background-position-y: auto;
+        background-position-y: -27vh;
         background-position-x:;
         filter: grayscale(50%) contrast(50%) brightness(40%);
     }
@@ -960,7 +962,7 @@ nav a:last-child:hover{
         padding-bottom: 55px;
     }
 
-        #footer-2{
+    #footer-2{
         height: 20vh;
     }
 
@@ -1025,6 +1027,7 @@ nav a:last-child:hover{
         background-repeat: no-repeat;
         border: 8px solid white;
     }
+
     .bordergambar2{
         height: 30vh;
         background-image: url("../img/02-min.jpg");
@@ -1033,6 +1036,7 @@ nav a:last-child:hover{
         background-repeat: no-repeat;
         border: 8px solid white;
     }
+
     .bordergambar3{
         height: 30vh;
         background-image: url("../img/04.jpeg");
@@ -1074,7 +1078,7 @@ nav a:last-child:hover{
     }
 
     .row1 h1:nth-child(1){
-        font-size: 8.7vw;
+        font-size: 8.4vw;
     }
     
     .row1 h1:nth-child(2){
@@ -1082,7 +1086,7 @@ nav a:last-child:hover{
     }
     
     .row1 h1:nth-child(3){   
-        font-size: 8.7vw;
+        font-size: 8.4vw;
         margin-bottom: 3vh;
     }
 }
@@ -1139,10 +1143,9 @@ nav a:last-child:hover{
     }
   
       .backgroundintro-2{
-          background: url("../img/backgroundintro.JPG");
-          background-size: cover;
+          background-size: 300vh;
           background-repeat: no-repeat;
-          background-position-y: auto;
+          background-position-y:-30vh;
           background-position-x:;
           filter: grayscale(50%) contrast(50%) brightness(40%);
       }
