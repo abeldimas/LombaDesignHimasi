@@ -589,6 +589,7 @@ nav a:last-child:hover{
         font-size: 3vh;
         line-height: 125.3%;
         letter-spacing: 0.05em;
+        height: 100% !important;
     }
 
     .respontext1{
@@ -655,8 +656,8 @@ nav a:last-child:hover{
         width: 100vw;
         background: url("../img/upacara4.JPG");
         background-size: cover;
+        background-repeat: no-repeat;
         background-position: center;
-        background-position-x: -35vh;
     }
 
     #footer-2{
