@@ -101,11 +101,12 @@ nav a:last-child:hover{
 
 /* Intro */
 .intro{
-    background-color: #FFF50F;
+    background-color: #E84A5F;
     letter-spacing: 0.15em;
     font-weight: 900;
     font-size: 10vw;
     line-height: 169px;
+    color:white;
 }
 
 .intro-1{
