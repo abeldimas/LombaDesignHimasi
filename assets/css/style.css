@@ -655,7 +655,7 @@ nav a:last-child:hover{
         height: 100vh;
         width: 100vw;
         background: url("../img/upacara4.JPG");
-        background-size: cover;
+        background-size: cover !important;
         background-repeat: no-repeat;
         background-position: center;
         background-position-x: -70vw !important;
