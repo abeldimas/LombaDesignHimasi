@@ -658,6 +658,7 @@ nav a:last-child:hover{
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        background-position-x: -70vw !important;
     }
 
     #footer-2{
