@@ -916,11 +916,15 @@ nav a:last-child:hover{
     }
 
     .harlahpancasila-1{
-        font-size: 3vh;w
+        font-size: 3vh;
     }
 
     .harlahpancasila-1 div:nth-child(2) {
         text-align: end;
+        font-size: 2.5vh;
+    }
+    .harlahpancasila-1 div:nth-child(1) {
+        font-size: 2.5vh;
     }
     
     .harlahpancasila-2{
@@ -1133,8 +1137,12 @@ nav a:last-child:hover{
         border: 8px solid white;
     }
 
+    .ocang .card-body{
+        height: 19.3vh;
+    }
+
     .irun .card-body{
-        height: 17vh;
+        height: 19.3vh;
     }
 
 
