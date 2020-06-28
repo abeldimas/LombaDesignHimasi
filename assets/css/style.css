@@ -1368,3 +1368,10 @@ nav a:last-child:hover{
 
     
 }
+
+
+@media (min-width: 1281px){
+    *{
+        overflow-y: hidden !important;
+    }
+}
