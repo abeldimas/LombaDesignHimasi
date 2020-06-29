@@ -1,5 +1,8 @@
-$(document).ready(function(){
+$(window).on("load", function(){
+    $(".loader-container").fadeOut(1000);
+});
 
+$(document).ready(function(){
     //Smooth Scrolling
     let scrollButton = $('#smoothScroll');
     scrollButton.click(function(e){
@@ -19,10 +22,4 @@ if(windowWidth <= 768){
 }
 if(windowWidth < 1024){
     $('.upacara2-2').insertBefore('.upacara2-1');
-}
-
-if(windowWidth > 1024){
-    //Fullpage Scroll
-    FastClick.attach(document.body);
-    $('#fullpage').fullpage();
 }

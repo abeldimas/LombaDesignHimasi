@@ -100,6 +100,43 @@ nav a:last-child:hover{
 }
 
 /* Intro */
+.loader-container{
+    width: 100%;
+    height: 100vh;
+    background: #113E5A;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999;
+    overflow: hidden !important;
+}
+
+.loader{
+    width: 50px;
+    height: 50px;
+    border: 5px solid;
+    color: #FFF5C1;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: loader 1.2s linear infinite;
+}
+
+@keyframes loader{
+    25%{
+        color:#FF0464;
+    }
+    50%{
+        color:#FD9F20;
+    }
+    75%{
+        color: white;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
 .intro{
     background-color: #113E5A;
     letter-spacing: 0.15em;
@@ -171,6 +208,7 @@ nav a:last-child:hover{
     background-size: 250vh;
     background-repeat: no-repeat;
     background-position-y: -160px;
+    background-attachment: fixed;
     filter: grayscale(50%) contrast(50%) brightness(40%);
 }
 
@@ -394,6 +432,7 @@ nav a:last-child:hover{
 
 #footer-2 div main{
     font-size: 2.3vh;
+    padding-bottom: 0.5%;
 }
 
 #footer-2 section a{
@@ -409,8 +448,12 @@ nav a:last-child:hover{
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    transition: 0.4s;
+    transition: 0.5s;
     font-size: 4vh;
+}
+
+#footer-2 section{
+    overflow: visible;
 }
 
 #footer-2 section div a{
@@ -430,14 +473,39 @@ nav a:last-child:hover{
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    transition: 0.4s;
+    transition: 0.5s;
     font-size: 4vh;
 }
 
-#footer-2 section a:hover{
-    background: #FAFAFA;
-    color: black;
+#footer-2 section div a:hover{
+    background: #DD1414 !important;
+    color: white !important;
     text-decoration: none;
+    transform: translate(0, -10px);
+    border: none;
+}
+
+#footer-2 section a:hover:nth-child(1){
+    background: #1DA1F2;
+    color: white;
+    border: none;
+    text-decoration: none;
+    transform: translate(0, -10px);
+}
+
+#footer-2 section a:hover:nth-child(2){
+    background: #e4405f;
+    color: white;
+    border: none;
+    text-decoration: none;
+    transform: translate(0, -10px);
+}
+#footer-2 section a:hover:nth-child(3){
+    background: #2ecc71;
+    color: white;
+    border: none;
+    text-decoration: none;
+    transform: translate(0, -10px);
 }
 
 /* Halaman About Us */
@@ -582,7 +650,7 @@ nav a:last-child:hover{
         background-size: 265vh;
         background-repeat: no-repeat;
         background-position-y: -25vh;
-        background-position-x: 0;
+        background-position-x: -25vh;
         filter: grayscale(50%) contrast(50%) brightness(40%);
     }
 
@@ -1367,11 +1435,4 @@ nav a:last-child:hover{
     }
 
     
-}
-
-
-@media (min-width: 1281px){
-    *{
-        overflow-y: hidden !important;
-    }
 }
