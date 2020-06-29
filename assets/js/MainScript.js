@@ -1,7 +1,6 @@
-//Loading Page
+//Pre-Loader
 $(window).on("load", function(){
     $(".loader-container").fadeOut(1000);
-    $('*').css('overflowY','visible');
 });
 
 //Smooth Scrolling
