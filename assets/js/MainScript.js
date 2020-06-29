@@ -1,16 +1,16 @@
+//Loading Page
 $(window).on("load", function(){
     $(".loader-container").fadeOut(1000);
+    $('*').css('overflowY','visible');
 });
 
-$(document).ready(function(){
-    //Smooth Scrolling
-    let scrollButton = $('#smoothScroll');
-    scrollButton.click(function(e){
-        e.preventDefault();
-        $('body,html').animate({
-            scrollTop: $(this.hash).offset().top
-        }, 2000)
-    })
+//Smooth Scrolling
+let scrollButton = $('#smoothScroll');
+scrollButton.click(function(e){
+    e.preventDefault();
+    $('body,html').animate({
+        scrollTop: $(this.hash).offset().top
+    }, 2000)
 })
 
 //Responsive Design
