@@ -7,10 +7,6 @@
     box-sizing: border-box;
     overflow-x: hidden;
 }
- 
-.loading {
-    display: hidden;
-}
 
 .fullPageSection{
     height: 100vh;
@@ -24,8 +20,8 @@ nav a:last-child{
     font-style: normal;
     font-weight: 800;
     display: inline-flex;
-    width: 60px;
-    height: 60px;
+    width: 8vh;
+    height: 8vh;
     background: none;
     border: 2px solid white;
     color: white;
@@ -34,11 +30,66 @@ nav a:last-child{
     justify-content: center;
     align-items: center;
     transition: 0.4s;
-    font-size: 32px;
+    font-size: 4vh;
 }
 
 nav a:last-child:hover{
     text-decoration: none;
+    background: white;
+    color: black;
+    width: 9vh;
+    height: 9vh;
+    font-size: 5vh;
+    transform: translate(5px, 0);
+}
+
+.loader-container1{
+    width: 100%;
+    height: 100vh;
+    background: #113E5A;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999;
+    overflow: hidden !important;
+}
+
+.loader-container2{
+    width: 100%;
+    height: 100vh;
+    background: #FF0464;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999;
+    overflow: hidden !important;
+}
+
+.loader{
+    width: 50px;
+    height: 50px;
+    border: 5px solid;
+    color: #FFF5C1;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: loader 1.2s linear infinite;
+}
+
+@keyframes loader{
+    25%{
+        color:#FF0464;
+    }
+    50%{
+        color:#FD9F20;
+    }
+    75%{
+        color: white;
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
 
 /* Index */
@@ -104,43 +155,6 @@ nav a:last-child:hover{
 }
 
 /* Intro */
-.loader-container{
-    width: 100%;
-    height: 100vh;
-    background: #113E5A;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 999999;
-    overflow: hidden !important;
-}
-
-.loader{
-    width: 50px;
-    height: 50px;
-    border: 5px solid;
-    color: #FFF5C1;
-    border-radius: 50%;
-    border-top-color: transparent;
-    animation: loader 1.2s linear infinite;
-}
-
-@keyframes loader{
-    25%{
-        color:#FF0464;
-    }
-    50%{
-        color:#FD9F20;
-    }
-    75%{
-        color: white;
-    }
-    to{
-        transform: rotate(360deg);
-    }
-}
-
 .intro{
     background-color: #113E5A;
     letter-spacing: 0.15em;
@@ -205,6 +219,12 @@ nav a:last-child:hover{
     background-repeat: no-repeat;
     filter: grayscale(100%);
     border: 9px solid #000000;
+    transition: 1s;
+    z-index: 99999;
+}
+
+.box-gambar-intro:hover{
+    filter: grayscale(0%);
 }
 
 .backgroundintro-2{
@@ -421,6 +441,11 @@ nav a:last-child:hover{
     background-repeat: no-repeat;
 }
 
+/* Animation */
+
+.fade-out{
+    opacity: 0;
+}
 
 #footer-2{
     width:100vw;
@@ -564,20 +589,27 @@ nav a:last-child:hover{
 
 #footer-3{
     width:100vw;
+    overflow: hidden;
     height: 15vh;
     background: #171717;
-    overflow: hidden;
 }
 
 #footer-3 div{
     width: 100vw;
     margin: auto;
     text-align: center;
+    
 }
 
 #footer-3 div main{
     font-size: 20px;
     color: white;
+    font-size: 2.3vh;
+    padding-bottom: 0.5%;
+}
+
+#footer-3 section{
+    overflow: visible;
 }
 
 #footer-3 section a{
@@ -585,16 +617,39 @@ nav a:last-child:hover{
     font-style: normal;
     font-weight: 800;
     display: inline-flex;
-    width: 60px;
-    height: 60px;
+    width: 7.5vh;
+    height: 7.5vh;
     background: #2c3e50;
     color: white;
     margin: 0 10px;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    transition: 0.4s;
-    font-size: 32px;
+    transition: 0.5s;
+    font-size: 4.5vh;
+}
+
+#footer-3 section a:hover:nth-child(1){
+    background: #1DA1F2;
+    color: white;
+    border: none;
+    text-decoration: none;
+    transform: translate(0, -10px);
+}
+
+#footer-3 section a:hover:nth-child(2){
+    background: #e4405f;
+    color: white;
+    border: none;
+    text-decoration: none;
+    transform: translate(0, -10px);
+}
+#footer-3 section a:hover:nth-child(3){
+    background: #2ecc71;
+    color: white;
+    border: none;
+    text-decoration: none;
+    transform: translate(0, -10px);
 }
 
 #footer-3 section a:hover{

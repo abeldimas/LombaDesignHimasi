@@ -1,6 +1,25 @@
 //Pre-Loader
 $(window).on("load", function(){
-    $(".loader-container").fadeOut(1000);
+    $(".loader-container1").fadeOut(1000);
+    $(".loader-container2").fadeOut(1000);
+});
+
+$(window).scroll( function(){
+    $('.fade-out').each( function(i){
+        var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+        var bottom_of_window = $(window).scrollTop() + $(window).height();
+        if( bottom_of_window > bottom_of_object ){
+            $(this).animate({'opacity':'1'},1000); 
+        }
+    }); 
+
+});
+
+//Parallax Effect
+VanillaTilt.init(document.querySelectorAll(".parallax3d"), {
+    reverse: false,
+    max: 25,
+    speed: 400
 });
 
 //Smooth Scrolling
