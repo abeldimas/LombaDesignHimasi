@@ -4,20 +4,9 @@ $(window).on("load", function(){
     $(".loader-container2").fadeOut(1000);
 });
 
-$(window).scroll( function(){
-    $('.fade-out').each( function(i){
-        var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-        var bottom_of_window = $(window).scrollTop() + $(window).height();
-        if( bottom_of_window > bottom_of_object ){
-            $(this).animate({'opacity':'1'},1000); 
-        }
-    }); 
-
-});
-
 //Parallax Effect
 VanillaTilt.init(document.querySelectorAll(".parallax3d"), {
-    reverse: false,
+    reverse: true,
     max: 25,
     speed: 400
 });
@@ -32,12 +21,55 @@ scrollButton.click(function(e){
 })
 
 //Responsive Design
-let windowWidth = $(window).width();
-if(windowWidth <= 768){
-    $('.respontext1').insertBefore('.respontext');
-    $('.box-upacara-1').insertBefore('.red-bordr');
-    $('.upacara2-2').insertBefore('.upacara2-1');
-}
-if(windowWidth < 1024){
-    $('.upacara2-2').insertBefore('.upacara2-1');
-}
+function responsiveDesign() {
+    if($(window).width() <= 768){
+        $('.respontext1').insertBefore('.respontext');
+        $('.box-upacara-1').insertBefore('.red-bordr');
+        $('.upacara2-2').insertBefore('.upacara2-1');
+    }
+    else if($(window).width() <= 1024){
+        $('.upacara2-2').insertBefore('.upacara2-1');
+        $('.respontext').insertBefore('.respontext1');
+        $('.box-upacara-1').insertBefore('footer');
+    } 
+    else{
+        $('.upacara2-1').insertBefore('.upacara2-2');
+        $('.respontext').insertBefore('.respontext1');
+        $('.box-upacara-1').insertBefore('footer');
+    }
+};
+
+$(window).resize(function(){
+    responsiveDesign();
+});
+
+responsiveDesign();
+
+// //Animation
+// let faders = document.querySelectorAll('.fade-in');
+// let sliders = document.querySelectorAll('.slide-up-1');
+
+// let appearOptions = {
+//     threshold: 0.4,
+// };
+
+// let appearOnScroll = new  IntersectionObserver 
+// (function(entries, appearOnScroll) {
+//     entries.forEach(entry => {
+//         if(!entry.isIntersecting){
+//             return;
+//         } else {
+//             entry.target.classList.add('appear');
+//             appearOnScroll.unobserve(entry.target);
+//         }
+//     })
+// }, appearOptions);
+
+// // faders.forEach(fader => {
+// //     appearOnScroll.observe(fader);
+// // });
+
+// sliders.forEach(slider => {
+//     appearOnScroll.observe(slider);
+// });
+

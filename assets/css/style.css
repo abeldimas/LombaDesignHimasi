@@ -366,6 +366,15 @@ nav a:last-child:hover{
     color: #78E6EA;
 }
 
+/* .fade-in{
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear{
+    opacity: 1;
+} */
+
 .upacara1{
     background: #FFF5C1;
 }
@@ -439,12 +448,6 @@ nav a:last-child:hover{
     background-position-y: -23vh;
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-/* Animation */
-
-.fade-out{
-    opacity: 0;
 }
 
 #footer-2{
@@ -778,8 +781,9 @@ nav a:last-child:hover{
         width: 100vw;
         background: url("../img/upacara5.jpg");
         background-size: cover;
+        background-repeat: no-repeat;
         background-position: center;
-        background-position-x: -23vw;
+        background-position-x: -11vh;
     }
 
     .upacara1 div:nth-child(2){
