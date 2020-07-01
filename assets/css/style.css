@@ -122,7 +122,14 @@ nav a:last-child:hover{
     border: 2px solid black;
     border-radius: 500px;
     padding: 2vh 4vh;
+    transition: 0.4s ease-in;
 }
+
+.row1 a:hover,
+.row1 a:focus{
+    box-shadow: 0 0.5em 0.5em -0.4em rgb(66, 66, 66);
+    transform: translateY(-0.25em);
+  }
 
 .row1 a:hover{
     text-decoration: none;
