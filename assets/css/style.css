@@ -1,4 +1,12 @@
 /* GLOBAL */
+
+/* Muli Fonts */
+@font-face{
+    font-family: "Muli";
+    src: url('../font/Muli-VariableFont_wght.ttf') format('truetype');
+    font-weight: 700;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -212,7 +220,7 @@ nav a:last-child:hover{
     right: 0;
     margin: auto;
     top: 11%;
-    background: url("../img/gambar1.JPG");
+    background: url("../img/gambar1.webp");
     background-position: left;
     background-size: cover;
     background-position-x: -100px;
@@ -228,7 +236,7 @@ nav a:last-child:hover{
 }
 
 .backgroundintro-2{
-    background: url("../img/online.jpg");
+    background: url("../img/online.webp");
     background-size: 250vh;
     background-repeat: no-repeat;
     background-position-y: -160px;
@@ -238,12 +246,16 @@ nav a:last-child:hover{
 
 .kata{
     font-size: 4.5vh;
-    color: #ffff;
+    color: #ffff !important;
 }
 
 /* Harlahpancasila Section */
 .harlahpancasila{
    background: #A92424;
+}
+
+.harlahpancasila img{
+    width: 150vh;
 }
 
 .harlahpancasila .d-table{
@@ -268,6 +280,7 @@ nav a:last-child:hover{
 }
 
 .harlahpancasila-1 div:nth-child(2) {
+    text-align: end;
     background-color: #FFF5C1;
     height: 50vh;
     margin: 0;
@@ -317,9 +330,7 @@ nav a:last-child:hover{
 
 .respontext1{
     height: 100vh;
-    background: url("../img/rapat.png");
-    /* background-position-y: -200px;
-    background-repeat: no-repeat; */
+    background: url("../img/rapat.webp");
     background-size: cover;
     padding: 0;
     margin: 0;
@@ -332,7 +343,7 @@ nav a:last-child:hover{
 
 .harlahpancasila-3 div:nth-child(1){
     height: 100vh;
-    background: url("../img/upacara2.JPG");
+    background: url("../img/upacara2.webp");
     background-position-x: 97%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -382,7 +393,7 @@ nav a:last-child:hover{
 .upacara1 div:nth-child(1){
     height: 60vh;
     width: 100vw;
-    background: url("../img/upacara03.jpg");
+    background: url("../img/upacara03.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: -80px;
@@ -443,7 +454,7 @@ nav a:last-child:hover{
 .box-upacara-2{
     width: 60vh;
     height: 100%;
-    background: url("../img/upacara1.jpg");
+    background: url("../img/upacara1.webp");
     background-position: contain;
     background-position-y: -23vh;
     background-size: cover;
@@ -563,7 +574,7 @@ nav a:last-child:hover{
 
 .bordergambar1{
     height: 50vh;
-    background-image: url("../img/01.jpg");
+    background-image: url("../img/01.webp");
     background-position: center;
     background-size: 60vh;
     background-repeat: no-repeat;
@@ -572,7 +583,7 @@ nav a:last-child:hover{
 
 .bordergambar2{
     height: 50vh;
-    background-image: url("../img/02-min.jpg");
+    background-image: url("../img/02-min.webp");
     background-position: center;
     background-size: 80vh;
     background-repeat: no-repeat;
@@ -581,13 +592,17 @@ nav a:last-child:hover{
 
 .bordergambar3{
     height: 50vh;
-    background-image: url("../img/04.jpeg");
+    background-image: url("../img/04.webp");
     background-position: bottom;
     background-position-x: -26.5vh;
     background-position-y: -45vh;
     background-size: 95vh;
     background-repeat: no-repeat;
     border: 8px solid white;
+}
+
+.card-title {
+    overflow: visible;
 }
 
 #footer-3{
@@ -751,7 +766,6 @@ nav a:last-child:hover{
 
     .harlahpancasila-3 div:nth-child(1){
         height: 100vh;
-        background: url("../img/upacara2.JPG");
         background-position-x: 93%;
         background-repeat: no-repeat;
         background-size: cover;
@@ -779,7 +793,7 @@ nav a:last-child:hover{
     .upacara1 div:nth-child(1){
         height: 100vh;
         width: 100vw;
-        background: url("../img/upacara5.jpg");
+        background: url("../img/upacara5.webp");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -830,7 +844,6 @@ nav a:last-child:hover{
     .box-upacara-2{
         width: 100vw;
         height: 100%;
-        background: url("../img/upacara1.jpg");
         background-position: center;
         background-position-y: 0;
         background-size: cover;
@@ -897,7 +910,7 @@ nav a:last-child:hover{
 
     .bordergambar1{
         height: 40vh;
-        background-image: url("../img/01.jpg");
+        background-image: url("../img/01.webp");
         background-position: center;
         background-size: 60vh;
         background-repeat: no-repeat;
@@ -906,7 +919,7 @@ nav a:last-child:hover{
 
     .bordergambar2{
         height: 40vh;
-        background-image: url("../img/02-min.jpg");
+        background-image: url("../img/02-min.webp");
         background-position: center;
         background-size: 80vh;
         background-repeat: no-repeat;
@@ -915,7 +928,7 @@ nav a:last-child:hover{
 
     .bordergambar3{
         height: 40vh;
-        background-image: url("../img/04.jpeg");
+        background-image: url("../img/04.webp");
         background-position: bottom;
         background-position-x: -25vh;
         background-position-y: -50vh;
@@ -1088,7 +1101,6 @@ nav a:last-child:hover{
         flex: 0 0 100%;
         max-width: 100%;
         height: 100vh;
-        background: url("../img/upacara2.JPG");
         background-position-x: 93%;
         background-repeat: no-repeat;
         background-size: cover;
@@ -1118,7 +1130,6 @@ nav a:last-child:hover{
     .upacara1 div:nth-child(1){
         height: 100vh;
         width: 100vw;
-        background: url("../img/upacara5.jpg");
         background-size: cover;
         background-position: center;
     }
@@ -1170,7 +1181,6 @@ nav a:last-child:hover{
     .box-upacara-2{
         width: 100vw;
         height: 100%;
-        background: url("../img/upacara1.jpg");
         background-position: center;
         background-position-y: -27vh;
         background-size: cover;
@@ -1241,7 +1251,7 @@ nav a:last-child:hover{
 
     .bordergambar1{
         height: 30vh;
-        background-image: url("../img/01.jpg");
+        background-image: url("../img/01.webp");
         background-position: center;
         background-size: 36vh;
         background-repeat: no-repeat;
@@ -1250,7 +1260,7 @@ nav a:last-child:hover{
 
     .bordergambar2{
         height: 30vh;
-        background-image: url("../img/02-min.jpg");
+        background-image: url("../img/02-min.webp");
         background-position: center;
         background-size: 50vh;
         background-repeat: no-repeat;
@@ -1259,7 +1269,7 @@ nav a:last-child:hover{
 
     .bordergambar3{
         height: 30vh;
-        background-image: url("../img/04.jpeg");
+        background-image: url("../img/04.webp");
         background-position: bottom;
         background-position-x: -27vh;
         background-position-y: -40vh;
@@ -1357,7 +1367,7 @@ nav a:last-child:hover{
         right: 0;
         margin: auto;
         top: 15vh;
-        background: url("../img/gambar1.JPG");
+        background: url("../img/gambar1.webp");
         background-position: left;
         background-size: cover;
         background-position-x: -60px;
@@ -1407,7 +1417,7 @@ nav a:last-child:hover{
   
       .harlahpancasila-3 div:nth-child(1){
           height: 100vh;
-          background: url("../img/upacara2.JPG");
+          background: url("../img/upacara2.webp");
           background-position-x: 93%;
           background-repeat: no-repeat;
           background-size: cover;
@@ -1434,7 +1444,7 @@ nav a:last-child:hover{
       .upacara1 div:nth-child(1){
           /* height: 100vh;
           width: 100vw; */
-          background: url("../img/upacara03.jpg");
+          background: url("../img/upacara03.webp");
           background-size: cover;
           background-position: left;
       }
@@ -1498,4 +1508,38 @@ nav a:last-child:hover{
     }
 
     
+}
+
+/* Large Laptop Width cnth= Macbook, Macbook Pro dll. */
+@media (min-width: 1920px){
+    .box-gambar-intro{
+        background-position: left;
+        background-size: cover;
+        background-position-x: 0;
+        background-repeat: no-repeat;
+    }
+
+    .backgroundintro-2{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: -10vh;
+        background-attachment: fixed;
+        filter: grayscale(50%) contrast(50%) brightness(40%);
+    }
+
+    .harlahpancasila-3 div:nth-child(1){
+        background-position-x: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .upacara1 div:nth-child(1){
+        height: 60vh;
+        width: 100vw;
+        background: url("../img/upacara03.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: -25vh;
+        background-position-x: 0px;
+    }
 }
