@@ -1511,7 +1511,7 @@ nav a:last-child:hover{
 }
 
 /* Large Laptop Width cnth= Macbook, Macbook Pro dll. */
-@media (min-width: 1920px){
+@media (min-width: 1366px) and (max-height: 600px){
     .box-gambar-intro{
         background-position: left;
         background-size: cover;
