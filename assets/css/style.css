@@ -101,6 +101,34 @@ nav a:last-child:hover{
 }
 
 /* Index */
+
+nav {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+section#fullpage {
+    position: relative;
+    left: 0px;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+div.col-md-1:nth-child(4) {
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+}
+@keyframes slideToLeft {
+    from { left: 0px; }
+    to { left: -110vw; }
+}
+@keyframes fadeNav {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+@keyframes changeColor {
+    from { background-color: #0B466B; }
+    to { background-color: #FF0464; }
+}
+
 .row1 {
     background: #FFF5C1;
 }
@@ -166,7 +194,7 @@ nav a:last-child:hover{
 }
 
 .row4 {
-    background: #0B466B;
+    background: #113E5A;
 }
 
 /* Intro */
@@ -183,8 +211,6 @@ nav a:last-child:hover{
     background-color: #FD9F20;
     font-size: 4vh;
     line-height: 125.3%;
-    /* or 44px */
-
     text-align: center;
     letter-spacing: 0.05em;
 }
@@ -274,7 +300,6 @@ nav a:last-child:hover{
     font-weight: normal;
     font-size: 4vh;
     line-height: 125.3%;
-    /* or 44px */
     letter-spacing: 0.05em;
 }
 
@@ -323,15 +348,11 @@ nav a:last-child:hover{
     height: 100vh;
     margin: 0px;
     padding: 0;
-
     font-style: normal;
     font-weight: normal;
     font-size: 4vh;
     line-height: 125.3%;
-    /* or 44px */
-
     letter-spacing: 0.05em;
-
     color: #FFFFFF;
 }
 
@@ -363,13 +384,11 @@ nav a:last-child:hover{
     height: 100vh;
     margin: 0px;
     padding: 0;
-
     text-align: end;
     font-style: normal;
     font-weight: normal;
     font-size: 4vh;
     line-height: 125.3%;
-    /* or 44px */
     letter-spacing: 0.05em;
     color: black;
 }
@@ -383,15 +402,6 @@ nav a:last-child:hover{
     line-height: 169px;
     color: #78E6EA;
 }
-
-/* .fade-in{
-    opacity: 0;
-    transition: opacity 250ms ease-in;
-}
-
-.fade-in.appear{
-    opacity: 1;
-} */
 
 .upacara1{
     background: #FFF5C1;
@@ -415,7 +425,6 @@ nav a:last-child:hover{
     font-weight: normal;
     font-size: 4vh;
     line-height: 125.3%;
-    /* or 44px */
     text-align: center;
     letter-spacing: 0.05em;
     color: #141414;
@@ -426,7 +435,6 @@ nav a:last-child:hover{
 }
 
 .upacara1 div:nth-child(2){
-    /* height: 100vh; */
     width: 100vw;
     font-size: 4vh;
 }
@@ -694,7 +702,6 @@ nav a:last-child:hover{
         height: 100%;
         font-size: 7vw;
         line-height: auto;
-        text-align: center;
         letter-spacing: auto;
     }
 
@@ -702,9 +709,6 @@ nav a:last-child:hover{
         top: 37%;
         height: 50vh;
         width: 40vh;
-        left: 0;
-        right: 0;
-        margin: auto;
         background-position-x: 50%;
     }
 
@@ -713,7 +717,6 @@ nav a:last-child:hover{
     }
 
     .text-intro-kanan{
-        position: absolute;
         top: 40vh;
         left: 0;
         right: 0;
@@ -722,7 +725,6 @@ nav a:last-child:hover{
     }
 
     .text-intro-kiri{
-        position: absolute;
         top: 15vh;
         left: 0;
         right: 0;
@@ -732,10 +734,8 @@ nav a:last-child:hover{
 
     .backgroundintro-2{
         background-size: 265vh;
-        background-repeat: no-repeat;
         background-position-y: -25vh;
         background-position-x: -25vh;
-        filter: grayscale(50%) contrast(50%) brightness(40%);
     }
 
     .kata{
@@ -745,10 +745,6 @@ nav a:last-child:hover{
     .harlahpancasila-1{
         font-size: 3vh;
     }
-
-    .harlahpancasila-1 div:nth-child(2) {
-        text-align: end;
-    }
     
     .harlahpancasila-2{
         height: 100%!important;
@@ -756,15 +752,7 @@ nav a:last-child:hover{
 
     .respontext{
         font-size: 3vh;
-        line-height: 125.3%;
-        letter-spacing: 0.05em;
-        height: 100vh !important;
         text-align: center;
-    }
-
-    .respontext1{
-        /* background-position-y: 0vh;
-        background-position-x: 50%; */
     }
 
     .harlahpancasila-3{
@@ -774,17 +762,9 @@ nav a:last-child:hover{
     .harlahpancasila-3 div:nth-child(1){
         height: 100vh;
         background-position-x: 93%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: 0;
-        margin: 0;
     }
     
     .harlahpancasila-3 div:nth-child(2){
-        background-color: #FFDB1E;
-        height: 100vh;
-        margin: 0px;
-        padding: 0;
         font-size: 3vh;
         text-align: center;
     }
@@ -799,7 +779,6 @@ nav a:last-child:hover{
 
     .upacara1 div:nth-child(1){
         height: 100vh;
-        width: 100vw;
         background: url("../img/upacara5.webp");
         background-size: cover;
         background-repeat: no-repeat;
@@ -856,14 +835,6 @@ nav a:last-child:hover{
         background-size: cover;
         background-repeat: no-repeat;
     }
-
-    /* #footer-2{
-        height: 20vh;
-    }
-
-    #footer-2 div main{
-        font-size: 3vh;
-    } */
 
     footer section a{
         margin-top: 20px;
@@ -1095,8 +1066,6 @@ nav a:last-child:hover{
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
         max-width: 100%;
-        /* background-position-y: -20vh;
-        background-position-x: 50%; */
     }
   
     .harlahpancasila-3{
@@ -1413,11 +1382,6 @@ nav a:last-child:hover{
           letter-spacing: 0.05em;
       }
   
-      .respontext1{
-          /* background-position-y: 0vh;
-          background-position-x: 50%; */
-      }
-  
       .harlahpancasila-3{
           height: 100vh!important;
       }
@@ -1449,8 +1413,6 @@ nav a:last-child:hover{
       }
   
       .upacara1 div:nth-child(1){
-          /* height: 100vh;
-          width: 100vw; */
           background: url("../img/upacara03.webp");
           background-size: cover;
           background-position: left;
@@ -1459,17 +1421,6 @@ nav a:last-child:hover{
       .upacara1 div:nth-child(2){
           font-size: 3vh;
       }
-  
-      /* .upacara2{
-        background: #FFFEFE;
-        height: 100% !important;
-    }
-    
-    .red-bordr{
-        width: 100vw;
-        background: #DD1414;
-        height: 10vh;
-    }*/
     
     .upacara2-1{
         color: #194B6B;
@@ -1500,7 +1451,6 @@ nav a:last-child:hover{
     }
 
     /* Index */
-
     .row1 h1:nth-child(1){
         font-size: 6.5vw;
     }
@@ -1513,8 +1463,6 @@ nav a:last-child:hover{
         font-size: 6.5vw;
         margin-bottom: 3vh;
     }
-
-    
 }
 
 /* Large Laptop Width cnth= Macbook, Macbook Pro dll. */

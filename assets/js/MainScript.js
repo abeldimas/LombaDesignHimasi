@@ -4,13 +4,6 @@ $(window).on("load", function(){
     $(".loader-container2").fadeOut(1000);
 });
 
-//Parallax Effect
-VanillaTilt.init(document.querySelectorAll(".parallax3d"), {
-    reverse: true,
-    max: 25,
-    speed: 400
-});
-
 //Smooth Scrolling
 let scrollButton = $('#smoothScroll');
 scrollButton.click(function(e){
@@ -45,31 +38,32 @@ $(window).resize(function(){
 
 responsiveDesign();
 
-// //Animation
-// let faders = document.querySelectorAll('.fade-in');
-// let sliders = document.querySelectorAll('.slide-up-1');
+//Slide Animation
+fullpageSec = document.querySelector("section#fullpage");
+startBut = document.querySelector("a#button1");
+aboutBut = document.querySelector("a[href^='about.html']");
+nav = document.getElementsByTagName('nav')[0];
+lastLine = document.querySelectorAll("div.col-md-1")[2];
 
-// let appearOptions = {
-//     threshold: 0.4,
-// };
+startBut.addEventListener("click", function(e) {
+    e.preventDefault();
+    document.body.style.backgroundColor = '#113E5A';
+    nav.style.animationName = 'fadeNav';
+    fullpageSec.style.animationName = 'slideToLeft';
+    setTimeout(function() {
+        window.location.href = "mainpage.html";
+    }, 1500);
+});
 
-// let appearOnScroll = new  IntersectionObserver 
-// (function(entries, appearOnScroll) {
-//     entries.forEach(entry => {
-//         if(!entry.isIntersecting){
-//             return;
-//         } else {
-//             entry.target.classList.add('appear');
-//             appearOnScroll.unobserve(entry.target);
-//         }
-//     })
-// }, appearOptions);
-
-// // faders.forEach(fader => {
-// //     appearOnScroll.observe(fader);
-// // });
-
-// sliders.forEach(slider => {
-//     appearOnScroll.observe(slider);
-// });
-
+aboutBut.onclick = function(e) {
+    e.preventDefault();
+    document.body.style.backgroundColor = '#FF0464';
+    lastLine.style.animationName = 'changeColor';
+    setTimeout(function() {
+        nav.style.animationName = 'fadeNav';
+        fullpageSec.style.animationName = 'slideToLeft';
+    }, 500);
+    setTimeout(function() {
+        window.location.href = "about.html";
+    }, 2000);
+}
